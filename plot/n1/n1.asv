@@ -1,0 +1,32 @@
+clc
+clear
+
+seed = 14;
+num_bus = 1;
+
+cw_data = load(['/Users/jamesliu/Desktop/Research/data/clockwise/seed' num2str(seed) '/cw_' num2str(seed) '.mat']);
+ccw_data = load(['/Users/jamesliu/Desktop/Research/data/counterclockwise/seed' num2str(seed) '/ccw_' num2str(seed) '.mat']);
+cw_data = cw_data.data(:,:);
+ccw_data = ccw_data.data(:,:);
+
+%% bus plots
+t = cw_data{1,2};
+cw_bus = cumsum(cw_data{2,2});
+ccw_bus = cumsum(ccw_data{2,2});
+
+bus = {cw_bus, ccw_bus}
+
+
+f = (bus{1}.^2 + bus{2}.^2)/(bus{1} + bus{2});
+
+
+
+plot(t,cw_bus,t,ccw_bus)
+legend({'clockwise', 'counterclockwise'},'Location', 'southeast')
+title(['n = ' num2str(num_bus) '    seed' num2str(seed)])
+xlabel('time (s)')
+ylabel('number of passengers')
+
+saveas(gcf, ['n1_seed' num2str(seed) '.png'])
+
+
