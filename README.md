@@ -10,7 +10,7 @@ We use a normal distribution probability function N(5, 3) to define the number o
 
 The designed simulation examines eight different scenarios with different directions and numbers of buses. Each scenario runs on five different seeds to ensure identical passenger and destination generation. 
 All simulation models created have the aforementioned parameters with a set seed to ensure the same distribution for passenger generation and their destinations. 
-We modeled and simulated a total of eight different bus operation strategies. These eight strategies differ in terms of the number of buses and the direction of bus operation, with specific differences as shown in Table \ref{tab-strategies}. The "CW" represents the clockwise direction of bus operation, and the "CCW" represents the counterclockwise direction of bus operation.
+We modeled and simulated a total of eight different bus operation strategies. These eight strategies differ in terms of the number of buses and the direction of bus operation, with specific differences. The "CW" represents the clockwise direction of bus operation, and the "CCW" represents the counterclockwise direction of bus operation.
 Additionally, to ensure the credibility of simulation results, we ran five independent simulations for each strategy using five different random seeds. Then, we averaged the results of the five simulations to represent the performance of each strategy.
 ![image](https://github.com/Longfei-Zhou/Bus-Simulation/assets/49735872/51662f6e-e434-4c76-becd-93b3d3e24949)
 
