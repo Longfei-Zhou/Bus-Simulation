@@ -1,6 +1,6 @@
 We introduce the simulation experiments we conducted for different bus operation strategies. To ensure comparability among different bus operation strategies and fairness in comparing different bus operation strategies, we set the same passenger arrival rate, number of bus stops, locations of bus stops, bus travel speed, and maximum passenger capacity for buses for all the different bus operation strategies. 
 The specific numerical settings of these experimental parameters are shown in the Table below. All these parameter values are generated according to a survey of real-world transportation data.
-![image](https://github.com/Longfei-Zhou/Bus-Simulation/assets/49735872/43a47952-6c2c-4492-a389-203844e4ba97)
+![image](https://github.com/Longfei-Zhou/Bus-Simulation/assets/49735872/43a47952-6c2c-4492-a389-203844e4ba97 | width=100)
 
 In the scenario we consider, there are a total of 10 bus stops. The bus route is a closed loop that connects these 10 stops in sequence. This means that the bus starts from the first station and travels in order through different stations until it reaches the last station. Then it returns from the last station back to the first station. 
 To simplify the simulation calculations, we use the travel time of the bus to define the distance between different bus stops. We set the average travel time between the first and last stops to be 20 minutes, passing through eight stations in between.
